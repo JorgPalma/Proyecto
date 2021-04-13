@@ -41,7 +41,6 @@ nav a:hover {
 nav input[type="text"] {
     background: var(--dark-blue);
     border: none;
-    border-bottom: var(--light) 3px solid;
     color: var(--light);
     padding: 0 5px 0 5px;
 }
@@ -51,12 +50,14 @@ nav input[type="text"]::placeholder {
 }
 
 nav input[type="text"]:focus {
-    border-bottom: var(--light) 3px solid;
     outline: none;
+}
+
+.op-form-search{
+    border-bottom: var(--light) 3px solid;
 }
 .fa-search{
     color: var(--light);
-    border-bottom: var(--light) 3px solid;
     padding-bottom: 4px;
     margin-left: -5px;
 }
