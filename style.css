@@ -95,7 +95,6 @@ aside{
 
 main{
     background: var(--dark-bg);
-    height: 1000px;
 }
 .op-h2 {
     font-family: 'Oswald', sans-serif;
@@ -159,4 +158,25 @@ section {
 footer {
     height: 200px;
     background: var(--dark-bg);
+}
+
+.button1{
+    display: block;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 10px;
+}
+.op-card{
+    margin-bottom: 20px;
+    border-radius:  15px;
+
+}
+
+.op-card-img{
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+h2{
+    margin-bottom: 20px;
 }
