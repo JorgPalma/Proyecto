@@ -180,3 +180,52 @@ footer {
 h2{
     margin-bottom: 20px;
 }
+
+.op-bg{
+    background: var(--dark-bg);
+    height: 100vh;
+}
+
+.op-container-login{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: var(--light);
+    height:95vh;
+}
+
+.op-form-field{
+    width: 90%;
+    outline: none;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    padding: 5px;
+    background: var(--light);
+    border: var(--dark-blue) 2px solid;
+}
+
+.op-icon-login-form-container {
+    text-align: center;
+    padding: 5px;
+    width: 10%;
+    border-radius: 50px 0 0 50px;
+    background: var(--light);
+    color: var(--dark-blue);
+    border: var(--dark-blue) 2px solid;
+    border-right: none;
+}
+ .op-form-link {
+     text-decoration: none;
+     color: var(--dark-blue);
+ }
+
+ .op-form-link:hover{
+    color: var(--dark-bg);
+}
+
+.op-form-button {
+    background: var(--dark-blue);
+    border-radius: 50px;
+    margin: 1%;
+    width: 47%;
+    color: var(--light);
+}
