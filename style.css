@@ -162,7 +162,7 @@ section {
 }
 
 footer {
-    height: 200px;
+    height: auto;
     background: var(--dark-bg);
 }
 
