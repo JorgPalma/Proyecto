@@ -40,7 +40,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--light);
+    color: #bbbbbb;
 }
 
 nav input[type="text"] {
@@ -89,7 +89,7 @@ aside{
 .op-h5 {
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
-    color: var(--dark-bg);
+    color: var(--dark-blue);
     font-size: 25px;
 }
 
@@ -115,7 +115,7 @@ section {
     width: 90%;
     outline: none;
     border: none;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 50px 50px 0;
     margin: 10px 0;
     padding: 5px;
     background: var(--light);
@@ -125,10 +125,11 @@ section {
     width: 100%;
     outline: none;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 10px 0;
-    padding: 5px;
+    padding: 10px;
     background: var(--light);
+    resize: none;
 }
 
 .op-contact-form-container input[type="submit"]{
@@ -149,7 +150,7 @@ section {
     text-align: center;
     padding: 5px;
     width: 10%;
-    border-radius: 5px 0 0 5px;
+    border-radius: 50px 0 0 50px;
     border-right: var(--dark-blue) 2px solid;
     background: var(--light);
     color: var(--dark-blue);
