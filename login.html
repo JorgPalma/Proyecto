@@ -12,31 +12,27 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-4">
-                <img class="img-fluid" src="imagenes/Slide1.png" alt="">
-                <div class="op-container-login-form">
-                    <form action="">
-                        <label for="login-user">
-                            <i class="fas fa-user"></i>
-                        </label><input type="text" name="" id="login-user">
-                        <label for="login-user-password">
-                            <i class="fas fa-key"></i>
-                        </label>
-                        <input type="password" name="" id="login-user-password">
-                        <p>¿No tienes una cuenta?</p>
-                        <a href="signup.html">¡Regístrate!</a>
-                        <a href="index.html">Cancelar</a>
-                        <input type="submit" value="Ingresa">                        
+    <div class="op-bg d-flex align-items-center">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-8 col-11 op-container-login">
+                    <img class="img-fluid" src="imagenes/Slide1.png" alt="">
+                    <div class="op-container-login-form">
+                        <form action="" class="text-center">
+                            <label for="login-user" class="op-icon-login-form-container"><i class="fas fa-user"></i></label><input class="op-form-field mb-3" type="text" name="" id="login-user" placeholder="Nombre de usuario">
+                            <label for="login-user-password" class="op-icon-login-form-container"><i class="fas fa-key"></i></label><input class="op-form-field mb-3" type="password" name="" id="login-user-password" placeholder="Contraseña">
+                            <p class="h6 mb-0">¿No tienes una cuenta?</p>
+                            <a href="signup.html" class="d-block h5 op-form-link mb-5">¡Regístrate!</a>
+                            <a class="btn op-form-button btn-lg" href="index.html">Cancelar</a>
+                            <input class="btn op-form-button btn-lg" type="submit" value="Ingresa">                        
 
-                    </form>
+                        </form>
 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 </body>
