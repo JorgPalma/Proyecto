@@ -184,6 +184,11 @@ footer {
 
 }
 
+.op-card-img-ropa{
+    border-radius: 15px 15px 0px 0px;
+    max-height: 220px;
+}
+
 h2{
     margin-bottom: 20px;
 }
