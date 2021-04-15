@@ -16,6 +16,11 @@ body{
     --dark-bg:#3e4f59;
 }
 
+.button1{
+    background-color: var(--dark-blue);
+    color: var(--light);
+}
+
 nav {
     background:var(--dark-bg);
 }
@@ -177,6 +182,11 @@ footer {
     border-radius: 15px 15px 0px 0px;
     max-height: 170px;
 
+}
+
+.op-card-img-ropa{
+    border-radius: 15px 15px 0px 0px;
+    max-height: 220px;
 }
 
 h2{
