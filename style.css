@@ -44,7 +44,7 @@ nav a {
     font-family: sans-serif;
 }
 
-nav a:hover {
+nav .nav-link:hover {
     color: #bbbbbb;
 }
 
@@ -243,25 +243,79 @@ h2{
 }
 
 .op-detail-container {
-    height: 90vh;
+    margin-bottom: 40px;
 }
 
 .op-detail-container-img {
     width: 100%;
-    height: 400px;
-    padding: 20px;
+    max-height: 400px;
+    height: auto;
+    padding: 10px;
+    align-self: center;
 }
 
 .op-detail-container-img img{
     max-width: 100%;
-    max-height: 300px;
+    max-height: 400px;
     border-radius: 30px;
 }
 
 .op-detail-container-price {
     align-self: center;
     display: inline-block;
-    border: var(--dark-blue) 5px solid;
+    border: var(--dark-blue) 3px solid;
     color: var(--dark-blue);
     padding: 10px 40px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.op-detail-container-owner{
+    align-self: center;
+}
+
+.op-detail-container-price p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+}
+
+.op-right-side-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    color: var(--dark-blue);
+}
+
+.op-description-container {
+    height: auto;
+    word-wrap: break-word;
+}
+
+.op-detail-table {
+    color: var(--dark-blue);
+    width: 48%;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.op-logo{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.op-logo:hover{
+    color: var(--light);
+}
+
+@media only screen and (max-width: 600px) {
+    .op-detail-table {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .op-detail-container-img {
+        margin-bottom: 50px;
+    }
 }
