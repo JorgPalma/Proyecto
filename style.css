@@ -16,6 +16,11 @@ body{
     --dark-bg:#3e4f59;
 }
 
+.button1{
+    background-color: var(--dark-blue);
+    color: var(--light);
+}
+
 nav {
     background:var(--dark-bg);
 }
