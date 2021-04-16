@@ -195,14 +195,15 @@ h2{
 
 .op-bg{
     background: var(--dark-bg);
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
 }
 
 .op-container-login{
     padding: 10px 20px;
     border-radius: 30px;
     background: var(--light);
-    height:95vh;
+    height:auto;
 }
 
 .op-form-field{
@@ -312,6 +313,21 @@ h2{
         width: 100%;
         margin: auto;
     }
+
+    .op-h2{
+        font-size:50px;
+    }
+
+    aside{
+        height: 70vh;
+    }
+    
+    .op-carousel-img {
+        width: 100%;
+        margin: auto;
+        max-height: 40vh;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
