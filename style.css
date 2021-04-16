@@ -307,6 +307,15 @@ h2{
     color: var(--light);
 }
 
+.op-logged-container-img{
+    height:750px;
+}
+.op-logged-p{
+    font-family: 'Oswald', sans-serif;   
+    color:var(--dark-blue);
+    font-size:70px
+}
+
 @media only screen and (max-width: 600px) {
     .op-detail-table {
         display: block;
@@ -327,11 +336,27 @@ h2{
         margin: auto;
         max-height: 40vh;
     }
+    .op-logged-container-img{
+        height:500px;
+    }
+    .op-logged-p{
+        font-family: 'Oswald', sans-serif;   
+        color:var(--dark-blue);
+        font-size:20px
+    }
 
 }
 
 @media only screen and (min-width: 768px) {
     .op-detail-container-img {
         margin-bottom: 50px;
+    }
+    .op-logged-container-img{
+        height:500px;
+    }
+    .op-logged-p{
+        font-family: 'Oswald', sans-serif;   
+        color:var(--dark-blue);
+        font-size:20px
     }
 }
