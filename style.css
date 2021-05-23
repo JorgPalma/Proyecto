@@ -332,6 +332,99 @@ h2{
     font-size:70px
 }
 
+.op-clima{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    background:var(--dark-blue);
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 60px;
+    z-index: 15;
+    position: fixed;
+    border-radius: 10px;
+}
+.op-cerrar-clima{
+    position: absolute;
+    font-size: 20px;
+    padding: 0;
+    display: block;
+    top: 0;
+    right: 0;
+    padding-right: 5px;
+    color: var(--dark-bg);
+}
+
+.op-clima-ciudad{
+    width: 100%;
+    height: 15%;
+    text-align: left;
+}
+
+.op-clima-ciudad h2{
+    font-size: 25px;
+    padding-left: 10px;
+    color: var(--light);
+}
+
+.op-clima-ciudad-cont{
+    width: 40%;
+    height: 70%;
+}
+
+.op-clima-ciudad-cont-min,
+.op-clima-ciudad-cont-max{
+    width: 100%;
+    height: 50%;
+    font-size: 12px;
+    border: var(--dark-bg) 1px solid;
+}
+
+.op-clima-ciudad-cont-min p,
+.op-clima-ciudad-cont-max p{
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+.op-clima-ciudad-cont-min-grados,
+.op-clima-ciudad-cont-max-grados{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: var(--light);
+}
+
+.op-clima-ciudad-actual{
+    width: 60%;
+    height: 70%;
+    border: var(--dark-bg) 1px solid;
+}
+
+.op-clima-ciudad-actual p{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.op-clima-ciudad-actual-temp{
+    text-align: center;
+    color: var(--light);
+}
+
+.op-clima-ubicacion {
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+
+.op-boton-ubicacion{
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    color: var(--dark-bg);
+    border-radius: 100px;
+}
+
 @media only screen and (max-width: 600px) {
     .op-detail-table {
         display: block;
@@ -359,6 +452,10 @@ h2{
         font-family: 'Oswald', sans-serif;   
         color:var(--dark-blue);
         font-size:20px
+    }
+
+    .op-clima{
+        width: 100%;
     }
 
 }
