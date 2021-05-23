@@ -11,7 +11,7 @@ $(document).ready(function(){
         let longitude = (position.coords.longitude).toFixed(6)
 
         $.get({
-            url: `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=ed48c8d60ad404e828cd5b28de59dce5`,  
+            url: `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=ed48c8d60ad404e828cd5b28de59dce5`,  
             success: function(datos) { 
                 console.log(datos)
                 const ciudad = {
