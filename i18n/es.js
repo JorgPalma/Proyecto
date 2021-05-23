@@ -6,7 +6,8 @@ Parsley.addMessages('es', {
       number:       "Este valor debe ser un número válido.",
       integer:      "Este valor debe ser un número válido.",
       digits:       "Este valor debe ser un dígito válido.",
-      alphanum:     "Este valor debe ser alfanumérico."
+      alphanum:     "Este valor debe ser alfanumérico.",
+      date:         "Fecha de nacimiento. Formato YYYY-MM-DD"
     },
     notblank:       "Este valor no debe estar en blanco.",
     required:       "Este valor es requerido.",
