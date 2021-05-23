@@ -21,13 +21,13 @@
                     src="imagenes/Login.png" 
                     alt="Login">
                     <div class="op-container-login-form">
-                        <form action="" class="text-center">
-                            <label for="login-user" class="op-icon-login-form-container"><i class="fas fa-user"></i></label><input class="op-form-field mb-3" type="text" name="" id="login-user" placeholder="Nombre de usuario">
-                            <label for="login-user-password" class="op-icon-login-form-container"><i class="fas fa-key"></i></label><input class="op-form-field mb-3" type="password" name="" id="login-user-password" placeholder="Contraseña">
+                        <form action="" class="text-center" data-parsley-validate>
+                            <label for="login-user" class="op-icon-login-form-container"><i class="fas fa-user"></i></label><input class="op-form-field mb-3" type="text" name="correo" required data-parsley-length="[3, 35]" data-parsley-type="email" name="" id="login-user" placeholder="Nombre de usuario">
+                            <label for="login-user-password" class="op-icon-login-form-container"><i class="fas fa-key"></i></label><input class="op-form-field mb-3" type="password" name="contraseña" required data-parsley-trigger="keyup" data-parsley-pattern="^[a-zA-Z ]+$" data-parsley-length="[5, 20]" name="" id="login-user-password" placeholder="Contraseña">
                             <p class="h6 mb-0">¿No tienes una cuenta?</p>
                             <a href="signup.html" class="d-block h5 op-form-link mb-5">¡Regístrate!</a>
-                            <a class="btn op-form-button btn-lg" href="index.html">Cancelar</a>
-                            <a class="btn op-form-button btn-lg" href="logged.html">Ingresa </a>                        
+                            <button class="btn op-form-button1" type="submit" href="logged.html">Ingresa</button>
+                            <a class="btn op-form-button btn-lg" href="index.html">Cancelar</a>                      
 
                         </form>
 
@@ -38,5 +38,11 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        <!--Validación-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://parsleyjs.org/dist/parsley.min.js"></script>
+    <script src="i18n/es.js"></script>
+    
 </body>
 </html>

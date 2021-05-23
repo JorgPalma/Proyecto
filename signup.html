@@ -21,16 +21,17 @@
                     src="imagenes/Signup.png" 
                     alt="Signup">
                     <div class="op-container-signup-form">
-                        <form action="" class="text-center">
-                            <label class="op-icon-login-form-container" for="signup-user"><i class="fas fa-user"></i></label><input class="op-form-field mb-3" type="text" name="" id="signup-user">
-                            <label class="op-icon-login-form-container" for="signup-user-password"><i class="fas fa-key"></i></label><input class="op-form-field mb-3" type="password" name="" id="signup-user-password">
-                            <label class="op-icon-login-form-container" for="signup-user-email"><i class="fas fa-envelope"></i></label><input class="op-form-field mb-1" type="email" name="" id="signup-user-email">
-                            <p class="h6 mb-0">¿Ya tienes una cuenta?</p>
-                            <a href="login.html" class="d-block h5 op-form-link mb-2">¡Inicia Sesión!</a>
-                            <a class="btn op-form-button btn-lg" href="index.html">Cancelar</a>
-                            <a class="btn op-form-button btn-lg" href="logged.html">Regístrate</a>                        
-                        </form>
+                        <form action="" class="text-center" data-parsley-validate>
 
+                            <label class="op-icon-login-form-container" for="signup-user"><i class="fas fa-user"></i></label><input class="op-form-field mb-3" type="text" name="usuario"  required data-parsley-trigger="keyup" data-parsley-length="[4, 20]" data-parsley-type="alphanum" data-parsley-length="[3, 20]" name="" id="signup-user" placeholder="Usuario">
+                            <label class="op-icon-login-form-container" for="signup-user-password"><i class="fas fa-key"></i></label><input class="op-form-field mb-3" type="password" name="contraseña" required data-parsley-trigger="keyup" data-parsley-pattern="^[a-zA-Z ]+$" data-parsley-length="[5, 20]" name="" id="signup-user-password"  placeholder="Contraseña">
+                            <label class="op-icon-login-form-container" for="signup-user-password2"><i class="fas fa-key"></i></label><input class="op-form-field mb-3" type="password" name="contraseña" required data-parsley-equalto="#signup-user-password" data-parsley-trigger="keyup" data-parsley-length="[3, 20]" name="" id="signup-user-password2"  placeholder="Repita contraseña">
+                            <label class="op-icon-login-form-container" for="signup-user-email"><i class="fas fa-envelope"></i></label><input class="op-form-field mb-1" type="email" name="correo" required data-parsley-trigger="keyup" data-parsley-type="email" data-parsley-length="[3, 35]" name="" id="signup-user-email"  placeholder="Correo">
+                                <p class="h6 mb-0">¿Ya tienes una cuenta?</p>
+                                <a href="login.html" class="d-block h5 op-form-link mb-2">¡Inicia Sesión!</a>
+                                <button class="btn op-form-button1" type="submit" href="logged.html">Ingresa</button>
+                                <a class="btn op-form-button btn-lg" href="index.html">Cancelar</a>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -38,5 +39,12 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+    <!--Validación-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://parsleyjs.org/dist/parsley.min.js"></script>
+    <script src="i18n/es.js"></script>
+
 </body>
 </html>
