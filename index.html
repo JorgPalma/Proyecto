@@ -55,6 +55,28 @@
             </div>
         </nav>
     </header>
+        <div class="op-clima" id="ventana-clima">
+            <a id="cerrar-clima" class="op-cerrar-clima"><i class="fas fa-times-circle"></i></a>
+            <div class="op-clima-ciudad"><h2 id="nombre-ciudad">Ciudad</h2></div>
+            <div class="op-clima-ciudad-cont">
+                <div class="op-clima-ciudad-cont-min">
+                    <p>Temp. mínima</p>
+                    <h3 class="op-clima-ciudad-cont-min-grados" id="minima">0°C</h3>
+                </div>
+                <div class="op-clima-ciudad-cont-max">
+                    <p>Temp. máxima</p>
+                    <h3 class="op-clima-ciudad-cont-max-grados" id="maxima">0°C</h3>
+                </div>
+            </div>           
+            <div class="op-clima-ciudad-actual">
+                <p>Temp. actual</p>
+                <h2 class="op-clima-ciudad-actual-temp" id="actual">0°C</h2>
+                <span class="icono-clima" id="icono">.</span>
+            </div>
+            <div class="op-clima-ubicacion">
+                <button class="op-boton-ubicacion" id="ubicacion">Obtener ubicación</button>
+            </div>
+        </div>
         <aside>
             <div class="container">
                 <div class="row">
@@ -287,7 +309,9 @@
 </footer>
 
     <!--Bootstraps-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
