@@ -55,28 +55,6 @@
             </div>
         </nav>
     </header>
-        <div class="op-clima" id="ventana-clima">
-            <a id="cerrar-clima" class="op-cerrar-clima"><i class="fas fa-times-circle"></i></a>
-            <div class="op-clima-ciudad"><h2 id="nombre-ciudad">Ciudad</h2></div>
-            <div class="op-clima-ciudad-cont">
-                <div class="op-clima-ciudad-cont-min">
-                    <p>Temp. mínima</p>
-                    <h3 class="op-clima-ciudad-cont-min-grados" id="minima">0°C</h3>
-                </div>
-                <div class="op-clima-ciudad-cont-max">
-                    <p>Temp. máxima</p>
-                    <h3 class="op-clima-ciudad-cont-max-grados" id="maxima">0°C</h3>
-                </div>
-            </div>           
-            <div class="op-clima-ciudad-actual">
-                <p>Temp. actual</p>
-                <h2 class="op-clima-ciudad-actual-temp" id="actual">0°C</h2>
-                <span class="icono-clima" id="icono">.</span>
-            </div>
-            <div class="op-clima-ubicacion">
-                <button class="op-boton-ubicacion" id="ubicacion">Obtener ubicación</button>
-            </div>
-        </div>
         <aside>
             <div class="container">
                 <div class="row">
@@ -132,6 +110,28 @@
                             </button>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="op-clima" id="ventana-clima">
+                <a id="cerrar-clima" class="op-cerrar-clima"><i class="fas fa-times-circle"></i></a>
+                <div class="op-clima-ciudad"><h2 id="nombre-ciudad">Ciudad</h2></div>
+                <div class="op-clima-ciudad-cont">
+                    <div class="op-clima-ciudad-cont-min">
+                        <p>Temp. mínima</p>
+                        <h3 class="op-clima-ciudad-cont-min-grados" id="minima">0°C</h3>
+                    </div>
+                    <div class="op-clima-ciudad-cont-max">
+                        <p>Temp. máxima</p>
+                        <h3 class="op-clima-ciudad-cont-max-grados" id="maxima">0°C</h3>
+                    </div>
+                </div>           
+                <div class="op-clima-ciudad-actual">
+                    <p>Temp. actual</p>
+                    <h2 class="op-clima-ciudad-actual-temp" id="actual">0°C</h2>
+                    <span class="icono-clima" id="icono">.</span>
+                </div>
+                <div class="op-clima-ubicacion">
+                    <button class="op-boton-ubicacion" id="ubicacion">Obtener ubicación</button>
                 </div>
             </div>
         </aside>
@@ -259,19 +259,19 @@
             <h2 class="op-h2 text-center">CONTACTO</h2>
             <div class="row justify-content-around">
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="imagenes/Contacto.png" alt="">
+                    <img class="img-fluid" 
+                    src="imagenes/Contacto.png" 
+                    alt="contacto">
                 </div>
                 <div class="col-lg-5 op-contact-form-container">
-                    <form data-parsley-validate>
-                        <label class="op-icon-form-container text-right" for="f-user-name"><i class="fas fa-user"></i></label><input type="text" name="nombre" data-parsley-trigger="keyup" data-parsley-type="alphanum" data-parsley-length="[4, 20]" name="nombre" id="f-user-name" placeholder="Nombre">
-                        <label class="op-icon-form-container" for="f-user-email"><i class="fas fa-at"></i></label><input type="email" name="correo" required data-parsley-length="[3, 35]" data-parsley-type="email" name="correo" id="f-user-email" placeholder="Correo electrónico">
-                        <label class="op-icon-form-container" for="f-user-number"><i class="fas fa-mobile-alt"></i></label><input type="text" name="numero" data-parsley-type="number" name="numero" id="f-user-number" placeholder="Número">
-                        <label class="op-icon-form-container" for="f-user-comuna"><i class="fas fa-globe-americas"></i></label><input type="text" name="comuna" data-parsley-pattern="^[a-zA-Z ]+$" data-parsley-length="[5, 20]" name="comuna" id="f-user-comuna" placeholder="Comuna">
-                        <label class="op-icon-form-container" for="f-user-fecha"><i class="fas fa-calendar-day"></i></label><input type="text" name="fecha" data-parsley-type="date" id="f-user-rut" placeholder="Fecha de nacimiento">                       
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpiar">
-                    </form> 
+                        <form data-parsley-validate>
+                            <label class="op-icon-form-container text-right" for="f-user-name"><i class="fas fa-user"></i></label><input type="text" name="usuario" data-parsley-trigger="keyup" data-parsley-type="alphanum" data-parsley-length="[4, 20]" name="" id="f-user-name" placeholder="Nombre" data-parsley-required="true">
+                            <label class="op-icon-form-container" for="f-user-email"><i class="fas fa-at"></i></label><input type="email" name="correo" data-parsley-trigger="keyup" required data-parsley-length="[3, 35]" data-parsley-type="email" name="" id="f-user-email" placeholder="Correo electrónico">
+                            
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje" required data-parsley-length="[15, 9999]" data-parsley-trigger="keyup" ></textarea>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpiar">
+                        </form>   
                 </div>
             </div>
         </div>
@@ -322,10 +322,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://parsleyjs.org/dist/parsley.min.js"></script>
     <script src="i18n/es.js"></script>
-=======
+
     
 
     <script src="app.js"></script>
->>>>>>> 43cfeb12ad9b3ec70186a80adad08bebd1a2e9ad
+
 </body>
 </html>

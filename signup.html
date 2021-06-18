@@ -17,20 +17,20 @@
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-4 col-md-6 col-sm-8 col-11 op-container-login">
-                    <img class="img-fluid"
+                    <img class="img-fluid op-img-login"
                     src="imagenes/Signup.png" 
                     alt="Signup">
                     <div class="op-container-signup-form">
                         <form action="" class="text-center" data-parsley-validate>
 
-                            <label class="op-icon-login-form-container" for="signup-user"><i class="fas fa-user"></i></label><input class="op-form-field mb-3" type="text" name="usuario"  required data-parsley-trigger="keyup" data-parsley-length="[4, 20]" data-parsley-type="alphanum" data-parsley-length="[3, 20]" name="" id="signup-user" placeholder="Usuario">
-                            <label class="op-icon-login-form-container" for="signup-user-password"><i class="fas fa-key"></i></label><input class="op-form-field mb-3" type="password" name="contraseña" required data-parsley-trigger="keyup" data-parsley-pattern="^[a-zA-Z ]+$" data-parsley-length="[5, 20]" name="" id="signup-user-password"  placeholder="Contraseña">
-                            <label class="op-icon-login-form-container" for="signup-user-password2"><i class="fas fa-key"></i></label><input class="op-form-field mb-3" type="password" name="contraseña" required data-parsley-equalto="#signup-user-password" data-parsley-trigger="keyup" data-parsley-length="[3, 20]" name="" id="signup-user-password2"  placeholder="Repita contraseña">
-                            <label class="op-icon-login-form-container" for="signup-user-email"><i class="fas fa-envelope"></i></label><input class="op-form-field mb-1" type="email" name="correo" required data-parsley-trigger="keyup" data-parsley-type="email" data-parsley-length="[3, 35]" name="" id="signup-user-email"  placeholder="Correo">
+                            <label class="op-icon-login-form-container" for="signup-user"><i class="fas fa-user"></i></label><input class="op-form-field mb-3" type="text" name="usuario"  required data-parsley-trigger="keyup" data-parsley-length="[4, 20]" data-parsley-type="alphanum" data-parsley-length="[3, 20]" name="ruser" id="signup-user" placeholder="Usuario">
+                            <label class="op-icon-login-form-container" for="signup-user-password"><i class="fas fa-key"></i></label><input class="op-form-field mb-3" type="password" name="contraseña" required data-parsley-trigger="keyup" data-parsley-pattern="^[a-zA-Z ]+$" data-parsley-length="[5, 20]" name="rpassword" id="signup-user-password"  placeholder="Contraseña">
+                            <label class="op-icon-login-form-container" for="signup-user-password2"><i class="fas fa-key"></i></label><input class="op-form-field mb-3" type="password" name="contraseña" required data-parsley-equalto="#signup-user-password" data-parsley-trigger="keyup" data-parsley-length="[3, 20]" name="crpassword" id="signup-user-password2"  placeholder="Repita contraseña">
+                            <label class="op-icon-login-form-container" for="signup-user-email"><i class="fas fa-envelope"></i></label><input class="op-form-field mb-1" type="email" name="correo" required data-parsley-trigger="keyup" data-parsley-type="email" data-parsley-length="[3, 35]" name="remail" id="signup-user-email"  placeholder="Correo">
                                 <p class="h6 mb-0">¿Ya tienes una cuenta?</p>
                                 <a href="login.html" class="d-block h5 op-form-link mb-2">¡Inicia Sesión!</a>
-                                <button class="btn op-form-button1" type="submit" href="logged.html">Ingresa</button>
                                 <a class="btn op-form-button btn-lg" href="index.html">Cancelar</a>
+                                <button class="btn op-form-button btn-lg" type="submit" href="logged.html">Ingresa</button>
                         </form>
                     </div>
                 </div>

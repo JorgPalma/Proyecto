@@ -66,13 +66,10 @@
                 </div>
                 <div class="col-lg-5 op-contact-form-container">
                         <form data-parsley-validate>
-                            <label class="op-icon-form-container text-right" for="f-user-name"><i class="fas fa-user"></i></label><input type="text" name="usuario" data-parsley-trigger="keyup" data-parsley-type="alphanum" data-parsley-length="[4, 20]" name="" id="f-user-name" placeholder="Nombre">
-                            <label class="op-icon-form-container" for="f-user-email"><i class="fas fa-at"></i></label><input type="email" name="correo" required data-parsley-length="[3, 35]" data-parsley-type="email" name="" id="f-user-email" placeholder="Correo electrónico">
-                            <label class="op-icon-form-container" for="f-user-number"><i class="fas fa-mobile-alt"></i></label><input type="text" name="numero" data-parsley-type="number" name="" id="f-user-number" placeholder="Número">
-                            <label class="op-icon-form-container" for="f-user-comuna"><i class="fas fa-globe-americas"></i></label><input type="text" name="comuna" data-parsley-pattern="^[a-zA-Z ]+$" data-parsley-length="[5, 20]" name="" id="f-user-comuna" placeholder="Comuna">
-                            <label class="op-icon-form-container" for="f-user-fecha"><i class="fas fa-calendar-day"></i></label><input type="text" name="fecha" data-parsley-type="date" id="f-user-rut" placeholder="Fecha de nacimiento">
+                            <label class="op-icon-form-container text-right" for="f-user-name"><i class="fas fa-user"></i></label><input type="text" name="usuario" data-parsley-trigger="keyup" data-parsley-type="alphanum" data-parsley-length="[4, 20]" name="" id="f-user-name" placeholder="Nombre" data-parsley-required="true">
+                            <label class="op-icon-form-container" for="f-user-email"><i class="fas fa-at"></i></label><input type="email" name="correo" data-parsley-trigger="keyup" required data-parsley-length="[3, 35]" data-parsley-type="email" name="" id="f-user-email" placeholder="Correo electrónico">
                             
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje" required data-parsley-length="[15, 9999]" data-parsley-trigger="keyup" ></textarea>
                             <input type="submit" value="Enviar">
                             <input type="reset" value="Limpiar">
                         </form>   
@@ -126,6 +123,5 @@
     <script src="i18n/es.js"></script>
 
 
-    asd
 </body>
 </html>
